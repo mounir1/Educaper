@@ -1,0 +1,38 @@
+<ion-view cache-view="false" view-title="Teachers from {{Department}}">
+    <ion-nav-buttons side="secondary">
+        <!--         TODO Use the person's avatar: -->
+        <img ng-src="{{discussion.from.thumb}}">
+
+    </ion-nav-buttons>
+
+    <div class="mm-split-pane">
+
+        <div class="mm-split-teacher-menu" ng-hide="TabMode">
+            <ion-pane ng-controller="SplitpaneCtrl">
+                <ion-content padding="true">
+                    <ion-list>
+                        <div class="list">
+                            <label class="item item-input">
+				                <i class="icon ion-search placeholder-icon"></i>
+				                <input type="text" placeholder="Filter" ng-model="filterText">
+			                </label>
+                        </div>
+                        <a class=" item item-avatar" ng-repeat="contact in contacts | filter:{name: filterText} | orderBy:'name' track by $index" ng-href="{{getURL(contact.index)}}"
+                            ng-class="{active: currentIndex && currentIndex == contact.index}">
+                            <img ng-src="{{contact.thumb}}" alt="">
+                            <h3>{{contact.name}}</h3>
+                            <P>Assistant Professor</P>
+                            <progress class="progressbar" max="100" value={{contact.value}}>
+                            </progress>
+
+                            <!--<div id="progressbarlabel">50 %</div>-->
+                        </a>
+                    </ion-list>
+                </ion-content>
+            </ion-pane>
+        </div>
+
+        <div ui-view="tablet" class="mm-split-pane-content"></div>
+
+    </div>
+</ion-view>

@@ -1,0 +1,138 @@
+<ion-view view-title="{{Course}}">
+
+    <!--<ion-nav-buttons side="secondary">
+        <button class="button button-icon icon ion-person" ui-sref="site.messages-contact({index: index})"></button>
+       
+    </ion-nav-buttons>
+    -->
+    <ion-content padding="true">
+
+        <h4 class="has-header-bar"> 
+                 <div>{{Course}}</div>
+                <div>Teacher : {{contact.name}}</div>
+            </h4>
+
+        <form style="" class="list">
+            <label class="item-input item-select">
+                    <div class="input-label">
+                        Semester
+                    </div>
+                    <select ng-model="data.index" 
+                    ng-options="ChartsSemester.indexOf(item) as item for item in ChartsSemester" 
+			ng-change="choice()">
+                    </select>
+                </label>
+        </form>
+
+        <div class="row">
+
+            <div class="preview-chart col" ng-controller="ClassClimateCtrl">
+                <div class="prevtext">{{name}}</div>
+                <pie-chart data="data" options="options"></pie-chart>
+            </div>
+
+            <div class="preview-chart col" ng-controller="pedeffectivenessCtrl">
+                <div class="prevtext">{{name}}</div>
+                <pie-chart data="data" options="options"></pie-chart>
+            </div>
+
+            <div class="preview-chart col" ng-controller="ClassEngagementCtrl">
+                <div class="prevtext">{{name}}</div>
+                <pie-chart data="data" options="options"></pie-chart>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="preview-chart col" ng-controller="TeacherStudentCtrl">
+                <div class="prevtext">{{name}}</div>
+                <pie-chart data="data" options="options"></pie-chart>
+            </div>
+
+            <div class="preview-chart col" ng-controller="RigorousExpectationCtrl">
+                <div class="prevtext">{{name}}</div>
+                <pie-chart data="data" options="options"></pie-chart>
+            </div>
+
+            <div class="preview-chart col" ng-controller="SubjuctValuingCtrl">
+                <div class="prevtext">{{name}}</div>
+                <pie-chart data="data" options="options"></pie-chart>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="preview-chart2 " ng-controller="GraphCtrl">
+                <nvd3 options="options" data="data"></nvd3>
+            </div>
+        </div>
+        <div class="col">
+            <div class="preview-chart2" ng-controller="Graph1Ctrl">
+                <nvd3 options="options" data="data"></nvd3>
+            </div>
+        </div>
+        <div class="col">
+            <div class="preview-chart2" ng-controller="Graph2Ctrl">
+                <nvd3 options="options" data="data"></nvd3>
+            </div>
+        </div>
+
+    </ion-content>
+
+    <!--<ion-content ng-show="isTab === false" padding="true">
+            <div> charts here ....</div>
+             <h4 class="has-header-bar"> Educaper Anlytics
+                <div>Teacher : {{teacher}}</div>
+                <div>{{course}}</div>
+            </h4>
+            <div class="row">
+                <div class="preview-chart1 col-50" ng-controller=" pedeffectivenessCtrl">
+                    <div class="prevtext">{{name}}</div>
+                    <pie-chart data="data" options="options"></pie-chart>
+                </div>
+
+                <div class="preview-chart1 col-50" ng-controller="ClassClimateCtrl">
+                    <div class="prevtext">Classroom Climate</div>
+                    <pie-chart data="data" options="options"></pie-chart>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="preview-chart1 col-50 " ng-controller="ClassEngagementCtrl">
+                    <div class="prevtext">{{name}}</div>
+                    <pie-chart data="data" options="options"></pie-chart>
+                </div>
+                <div class="preview-chart1 col-50" ng-controller=" pedeffectivenessCtrl">
+                    <div class="prevtext">{{name}}</div>
+                    <pie-chart data="data" options="options"></pie-chart>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="preview-chart1 col-50" ng-controller="ClassClimateCtrl">
+                    <div class="prevtext">{{name}}</div>
+                    <pie-chart data="data" options="options"></pie-chart>
+                </div>
+
+                <div class="preview-chart1 col-50 " ng-controller="ClassEngagementCtrl">
+                    <div class="prevtext">{{name}}</div>
+                    <pie-chart data="data" options="options"></pie-chart>
+                </div>
+            </div>
+
+            <div class="card " ng-controller="GraphCtrl">
+                <nvd3 options="options" data="data"></nvd3>
+            </div>
+
+            <div class="card" ng-controller="Graph1Ctrl">
+                <nvd3 options="options" data="data"></nvd3>
+            </div>
+
+            <div class=" card" ng-controller="Graph2Ctrl">
+                <nvd3 options="options" data="data"></nvd3>
+            </div>
+
+            <div class=" card" ng-controller="GraphCtrl">
+                <nvd3 options="options" data="data"></nvd3>
+            </div>
+        </ion-content>-->
+
+</ion-view>

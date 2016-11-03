@@ -1,0 +1,34 @@
+<ion-view cache-view="true" view-title="{{contact.name}}">
+    <div class="mm-split-pane">
+        <div class="mm-split-pane-menu">
+            <ion-pane>
+                <ion-content padding="true" ng-init="goURL(0)">
+                    <ion-list>
+                        <ion-item>
+                            <img class="profile-image" ng-src="{{contact.thumb}}">
+                            <div class="tname"> {{contact.name}}</div>
+                        </ion-item>
+                        <div ng-repeat="course in COURSES">
+                            <a class="item" data-ng-class="{'selected':course.selected}" ng-click="goURL(course.id)" 
+                                ng-class="{active: currentCourse && currentCourse == course.id}">
+                                {{course.name}}
+                            </a>
+                        </div>
+                        <a class="item" data-ng-class="{'selected': NoCourseSelected && isTab}" ng-click="goURL(0)">General Performance
+                        </a>
+                        <ion-item > Email: mymailbox@email.com</ion-item>
+                        <ion-item > Mobile: 0400 111 222</ion-item>
+                    </ion-list>
+
+                    <button class=" button button-block" ng-click="sendMessage();">
+                        Send a message
+                    </button>
+                    <button ng-show="isTab" class=" button button-block notclicked" ng-click="switchMode()"
+                     data-ng-class="{'notclicked': !TabMode && isTab , 'clicked' : TabMode && isTab }">
+					</button>                  
+                    <!--ui-sref="site.teachers-contact({index: contact.index})"-->
+            </ion-pane>
+        </div>
+        <div ui-view="tablet" class="mm-split-pane-content">
+        </div>
+</ion-view>

@@ -1,0 +1,275 @@
+ @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
+hc-chart {
+  width: 100%;
+  display: block;
+}
+
+hc-pie-chart {
+  width: 100%;
+  display: block;
+}
+
+ 
+  .whitespacenormal div {
+      white-space: normal;
+  }
+  
+  .welcome {
+      text-align: center;
+      margin: auto
+  }
+  
+  .menu-part {
+      background: #293043;
+      margin-top: 10px;
+  }
+  
+  .user-name {
+      margin-top: 5px;
+      margin: auto;
+      color: white;
+      font-size: 16px;
+  }
+  
+  .user-role {
+      margin-top: 5px;
+      margin: auto;
+      color: pink;
+  }
+  
+  .profile-image {
+      display: block;
+      border-radius: 100px;
+      border: 1px solid #fff;
+      width: 60px;
+      height: 60px;
+      margin: 10px auto 0;
+      box-shadow: 0px 0px 4px rgba(5, 0, 0, 0.10);
+  }
+  
+  .progressbar {
+      height: 5px;
+  }
+  
+  .purple {
+      -webkit-text-fill-color: white;
+      background: #b23fe3;
+      font-size: small;
+      border: darkblue;
+      box-sizing: content-box;
+  }
+  
+  .selected {
+      background: #f5f5f5 ;
+  }
+  
+  .info {
+      background: grey
+  }
+  
+  .imglogo {
+      border: #c7254e;
+      display: block;
+      margin: auto;
+      max-width: 50%;
+      height: auto;
+      width: auto;
+  }
+  
+  .home-background {
+      /*  	background: url(img/educaper-logo.png) no-repeat center center fixed;*/
+      background-size: cover;
+  }
+  
+  .gallery {
+      margin-left: px;
+      max-width: 600px;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+  }
+  
+  .col {
+      fill: white;
+  }
+  
+  .preview-chart {
+      margin: auto;
+      max-height: 250px;
+      max-width: 200px;
+      min-width: 100px;
+      min-height: 120px;
+      width: auto;
+      height: auto;
+      border: 1px solid #CECECE;
+      box-shadow: 6px 6px 10px #DDD;
+      margin-bottom: 20px;
+      background: white;
+  }
+
+
+.item-icon-left .item-content {
+  padding-left:3em;  
+}
+
+.item-icon-left i {
+  left:0;
+  right: auto;
+}
+  .preview-chart1 {
+      margin: auto;
+      max-height: 340px;
+      max-width: 300px;
+      min-width: 80px;
+      min-height: 100px;
+      width: auto;
+      height: auto;
+      border: 1px solid #CECECE;
+      box-shadow: 6px 6px 10px #DDD;
+      margin-bottom: 30px;
+      background: white;
+  }
+  div.chart-container {
+    width: 600px;
+    height:400px;
+    border: 1px solid green;
+    padding-bottom: 44px
+}
+
+  .preview-chart2 {
+      margin: auto;
+      max-height: 650px;
+      max-width: 600px;
+      min-width: 120px;
+      border: 1px solid red;
+      box-shadow: 6px 6px 10px #DDD;
+      margin-bottom: 30px;
+      background: white;
+  }
+  
+  .eIcon {
+      background-image: url('../img/icon.png');
+  }
+  
+  .prevtext {
+      font-size: 14px;
+      text-align: center;
+  }
+  
+  .tname {
+      text-align: center;
+      font-size: 16px;
+  }
+  /*body {
+      /*cursor: url('http://ionicframework.com/img/finger.png'), auto;
+  }
+  */
+  
+  @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+  * {
+      font-family: Lato;
+  }
+  
+  .clicked:before {
+      content: ">> Web Mode";
+  }
+  
+  .notclicked:before {
+      content: "<< Tablet Mode";
+  }
+  .courseMode:before {
+      content : "My Courses";
+      align-content: center;
+  }
+  .educaperMode:before {
+      content: "Educaper Dashboard";
+      align-content: center;
+  }
+  .tclicked {
+      background-color: #336688;
+  }
+  
+  .tnotclicked {
+      background-color: #CECECE;
+  }
+  
+  .content h1 {
+      font-weight: 300;
+      text-align: center;
+  }
+  
+  .imad {
+      border-color: white;
+      background-color: transparent;
+      color: white;
+      position: relative;
+      z-index: 2;
+      display: block;
+      margin: 5px;
+      padding: 16px;
+      padding-left: 10px;
+      border-width: 1px;
+      font-size: 16px;
+      text-indent: inherit;
+      font-family: sans-serif;
+      background: transparent;
+  }
+  
+  svg {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+  }
+  
+  .nvd3.nv-pie .nv-pieLabels text {
+      font-family: Lato;
+      font-size: 18px;
+      font-weight: 300;
+      fill: #fff !important;
+  }
+  
+  .custom-item-divider.item-divider {
+      background-color: #336688;
+      color: white;
+  }
+  
+  .custom-item-divider.item.activated {
+      background-color: #336688;
+      opacity: 0.8;
+  }
+.card-header {
+  padding:2px;
+  border:1px solid gray;
+  display: inline-block; 
+}
+
+.fancy-frame2 {
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: #09C #F0F0F0;
+border-image: none;
+border-radius: 100px 0 100px 0;
+-webkit-border-radius: 100px 0 100px 0;
+-moz-border-radius: 100px 0 100px 0;
+border-style: solid;
+border-width: 5px;
+box-shadow: 0 0 4px 0 #666666;
+}
+
+.A-grade {
+  background-color:#53a93f;
+}
+.B-grade {
+  background-color:#427fed;
+}
+.C-grade {
+  background-color:#FF7E00;
+}
+.O-grade {
+  background-color: rgb(221,75,57);
+}
+
+.is-active {
+  color:#0088cc;
+}

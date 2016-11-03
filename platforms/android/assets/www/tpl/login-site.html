@@ -1,0 +1,19 @@
+<ion-view view-title="Connect to Moodle" ng-init="skipthis()">
+    <ion-content padding="true" ng-init="skipthis">
+        <div class="list">
+            <div class="item item-text-wrap">Please enter the URL of your Moodle site. Note that it might not be configured to work with this app.
+            </div>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Site address</span>
+                <input type="text" placeholder="moodle.org" ng-model="url">
+            </label>
+            <div class="item">
+                <button class="button button-block" ng-click="connect(url)">Connect!</button>
+            </div>
+        </div>
+	
+	
+        <img class="imglogo" src="img/educaper-logo.png">
+
+    </ion-content>
+</ion-view>
