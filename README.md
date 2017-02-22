@@ -5,6 +5,8 @@ contact mounir@educaper.com for more information
 
 
 (http://educaper.com)
-![alt tag](https://github.com/mounir1/Educaper/tree/master/www/img/intro1.jpg)
+
+
+![alt tag](/www/img/intro1.jpg)
 ![alt tag](https://github.com/mounir1/Educaper/tree/master/www/img/intro2.jpg)
 ![alt tag](https://github.com/mounir1/Educaper/tree/master/www/img/intro3.jpg)
