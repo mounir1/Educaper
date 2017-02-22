@@ -3,4 +3,5 @@ available on plaaystore and app store
 
 contact mounir@educaper.com for more information 
 
-http//:educaper.com
+
+(http://educaper.com)
