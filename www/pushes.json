@@ -1,0 +1,9 @@
+phonegap push--deviceID "dKJFHbz0Geg:APA91bHD6CKGGYBP7G4LI73muSh9dKl54gCeD68HG1p8Jo4to4rUmFr9EIxMJbZ1KFJP_9HPPn-HBxYntuna5rLVQS3leeqtCFd7FxQZuSGgukXaN76-q6Eejr4RnSr-M46NZiQG9z3O"--service gcm--payload '{"notification": { "title": "Test Notification","body": "This offer expires at 11:30 or whatever", "notId": 10 ,"data" :{"message" : "hello there","title" : "yes fucler"}}}'
+
+"dKJFHbz0Geg:APA91bHD6CKGGYBP7G4LI73muSh9dKl54gCeD68HG1p8Jo4to4rUmFr9EIxMJbZ1KFJP_9HPPn-HBxYntuna5rLVQS3leeqtCFd7FxQZuSGgukXaN76-q6Eejr4RnSr-M46NZiQG9z3O"
+"cvfkkjoIDLE:APA91bG6xdQX-9OkcWhbA1Ch6MfTgHrBKrJUybI3Qy0kTDCLmbNLZZpsLsJndWsAhVMKk28OuIMUBdZLxhN9VCeiHKAA2NUt6EKLdIS8-B8d_Op4Pegilwj5dlbwxQrXkC8kHzRq1Qpp"
+"ccMMmKh78ls:APA91bE6SIIeet4O3HfullnRj82xHRj-ZnwSMFgC66cxLhOOTgvy0dqHSUV5fQ8IhdLFAvdUJ6qDQ5elPS7ZdMIftHy66ioWhuQw9iRMBq5Vk_FLPG9QMoSHGS5Qh4SciHaV7IQDgDg5"
+
+phonegap push--deviceID cvfkkjoIDLE: APA91bG6xdQX - 9 OkcWhbA1Ch6MfTgHrBKrJUybI3Qy0kTDCLmbNLZZpsLsJndWsAhVMKk28OuIMUBdZLxhN9VCeiHKAA2NUt6EKLdIS8 - B8d_Op4Pegilwj5dlbwxQrXkC8kHzRq1Qpp--service gcm--payload '{ "data": { "title": "Hello", "message": "World"} }'
+phonegap push--deviceID dKJFHbz0Geg: APA91bHD6CKGGYBP7G4LI73muSh9dKl54gCeD68HG1p8Jo4to4rUmFr9EIxMJbZ1KFJP_9HPPn - HBxYntuna5rLVQS3leeqtCFd7FxQZuSGgukXaN76 - q6Eejr4RnSr - M46NZiQG9z3O--service gcm--payload '{ "data": { "title": "Hello", "message": "World"} }'
+phonegap push--deviceID ccMMmKh78ls: APA91bE6SIIeet4O3HfullnRj82xHRj - ZnwSMFgC66cxLhOOTgvy0dqHSUV5fQ8IhdLFAvdUJ6qDQ5elPS7ZdMIftHy66ioWhuQw9iRMBq5Vk_FLPG9QMoSHGS5Qh4SciHaV7IQDgDg5--service apns--payload '{ "aps": { "alert": "Hello World" } }'

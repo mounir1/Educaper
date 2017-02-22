@@ -1,0 +1,62 @@
+<ion-modal-view style="background-color: #713dcb;">
+
+
+
+
+
+    <div ng-if="text" class="container-fluid" style="height:25%; padding-top: 10%;">
+        <h1 style="font-size:26px;">{{text}}</h1>
+    </div>
+
+    <div ng-if="!text" class="container-fluid" style="height:25%; padding-top: 10%;">
+        <h4 style="font-size:26px;">{{default}}</h4>
+    </div>
+
+
+    <div class="container-fluid" style="height:100%;">
+        <div class="container-fluid" style="height:25%;">
+            <div id="1" class="row" style="height:100%">
+                <div id="good" class="col col-50" style="border-right: 1px rgba(255, 255, 255, 0.3) solid;" ng-click="feed(1)">
+                    <img src="img/good.png" class="img-responsive" style="height:30%; width:28%;"></img>
+                    <p class="ptxt" style="text-align:center;">Katılıyorum</p>
+
+                </div>
+
+                <div id="verygood" class="col" ng-click="feed(2)">
+                    <img src="img/very-good.png" class="img-responsive" style="height:30%; width:28%;"></img>
+                    <p class="ptxt" style="text-align:center;">Kesinlikle katılıyorum</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="height:25%;">
+            <div id="2" class="row" style="height:100%">
+                <div id="bad" class="col col-50" style="border-right: 1px rgba(255, 255, 255, 0.3) solid;" ng-click="feed(3)">
+                    <img src="img/bad.png" class="img-responsive" style="height:30%; width:30%;"></img>
+                    <p class="ptxt" style="text-align:center;">Katılmıyorum</p>
+
+                </div>
+
+                <div id="average" class="col" ng-click="feed(4)">
+                    <img src="img/average.png" class="img-responsive" style="height:30%; width:28%;"></img>
+                    <p class="ptxt" style="text-align:center;">Kararsızım</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="height:25%;">
+            <div id="3" class="row" style="height:100%">
+                <div id="verybad" class="col col-50" style="border-right: 1px rgba(255, 255, 255, 0.3) solid;" ng-click="feed(5)">
+                    <img src="img/very bad.png" class="img-responsive" style="height:30%; width:28%;"></img>
+                    <p class="ptxt" style="text-align:center;">Kesinlikle katılmıyorum </p>
+
+                </div>
+
+                <div id="saymore" class="col" ng-click="feed(6)">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</ion-modal-view>

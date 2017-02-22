@@ -1,0 +1,12 @@
+<ion-content padding="true" class="home" ng-controller="homeCtrl ">
+
+    <div class="icons">
+        <img src="img/comment.png" ng-click="openComment()" style="height:35%; width:35%; display: block; margin-left: auto; margin-right: auto; margin-top:40%;">
+    </div>
+    <div class="icons">
+        <img src="img/notification.png" ng-click="openNotification()" style="height:35%; width:35%; display: block; margin-left: auto; margin-right: auto; margin-top:15%;">
+        <span class="badge badge-assertive" style="margin-left:60%;">{{numberOfNotifications}}</span>
+    </div>
+    <!--<div>{{uid}}</div>
+    <button ng-click="logout()">logout</button>-->
+</ion-content>

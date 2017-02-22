@@ -2,85 +2,48 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-	<title>LMS --> Educaper</title>
-	<link rel="shortcut icon" href="img/icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Educaper Mobile App</title>
+    <link rel="manifest" href="manifest.json">
 
-	<link href="http://fonts.googleapis.com/css?family=Droid%20Sans" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" type="text/css">
-	<link href="lib/nvd3/build/nv.d3.min.css" rel="stylesheet">
-	<link href="css/ionic.app.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="lib/xcharts.min.css" rel="stylesheet">
+    <meta name="description" content="Educaper is a teaching diagnostic and improvement tool that works in real time and in a spontaneous way">
+    <meta name="keywords" content="effective teaching, teachers evaluation, teachers assesment, surveys,education,assesment">
+    <meta name="author" content="Educaper.com , Mounir Abderrahmani">
+    <link rel="shortcut icon" href="img/icon.png" />
 
-	<script src="lib/ionic/js/ionic.bundle.min.js"></script>
-	<script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
-	<script src="lib/ionic/js/ionic.js"></script>
-	<script src="js/ng-cordova.min.js"></script>
-
-
-	<!-- Angular Sources -->
-	<script src="lib/angular/angular.js"></script>
-	<script src="lib/angular/angular-resource.js"></script>
-	<script src="lib/angular/angular-sanitize.js"></script>
-	<script src="lib/angular/angular-touch.js"></script>
-	<script src="lib/angular/angular.min.js"></script>
-	<script src="lib/angular/angularfire.min.js"></script>
-
-	<script src="lib/angular-translate/angular-translate.js"></script>
-	<script src="lib/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
-
-	<script src="lib/jquery/jquery.min.js"></script>
-
-	<!-- Firebase -->
-	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-
-	<!-- AngularFire -->
-	<script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
-
-	
-	<script src="lib/angular-nvd3/dist/angular-nvd3.min.js"></script>
-	<script src="lib/d3/d3.min.js"></script>
-	<script src="lib/nvd3/build/nv.d3.min.js"></script>
-
-	<script src="lib/pie-chart/pie-chart.min.js"></script>
-
-	<script src="lib/google-charts/ng-google-chart.js"></script>
-	<script src="https://www.google.com/jsapi"></script>
-
-	<script src="lib/highcharts/highcharts.js"></script>
-	<!--<script src="lib/highcharts/highcharts.src.js"></script>-->
-	<script src="lib/highcharts/highcharts-ng.js"></script>
-	<script src="lib/highcharts/exporting.js"></script>
-
-
-	<script src="js/echarts.js"></script>
-
-	<script src="lib/xcharts.min.js"></script>
+    <link rel="manifest" href="manifest.json">
 
 
 
-	<script src="js/auth.js"></script>
-	<script src="js/uirouts.js"></script>
-	<script src="js/controllers.js"></script>
-	<script src="js/site.js"></script>
-	<script src="js/files.js"></script>
-	<script src="js/services.js"></script>
-	<script src="js/settings.js"></script>
-	<script src="js/derectives.js"></script>
-	<script src="js/sections.js"></script>
-	<script src="js/forums.js"></script>
-	<script src="js/events.js"></script>
-	<script src="js/app.js"></script>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <script src="lib/firebase.js"></script>
+
+    <script src="lib/angularfire.min.js"></script>
+
+
+    <script src="cordova.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/factory.js"></script>
+    <script type="text/javascript" src="js/homeCtrl.js"></script>
+    <script type="text/javascript" src="js/authCtrl.js"></script>
+    <script type="text/javascript" src="js/slideCtrl.js"></script>
+
 
 </head>
 
-<body ng-app="app" animation="slide-left-right-ios7">
+<body ng-app="app">
 
-	<ion-nav-view>
+    <ion-nav-view>
 
-	</ion-nav-view>
+    </ion-nav-view>
 
 </body>
 
