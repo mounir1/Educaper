@@ -1,5 +1,5 @@
 # Educaper v 0.0.1
-available on plaaystore and app store 
+available on playstore and app store 
 
 contact mounir@educaper.com for more information 
 
