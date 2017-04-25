@@ -1,0 +1,172 @@
+<ion-modal-view cache-view="false" view-title="How was The Lesson">
+    <ion-header-bar class="bar bar-header">
+        <h1 class="title container-fluid">How was the Lesson ?</h1>
+        <button class="button button-icon ion-close-round" ng-click="closerate()"></button>
+    </ion-header-bar>
+
+
+    <!--     <ion-content class="row" style="background: -moz-linear-gradient(-45deg, rgba(72,76,146,1) 0%, rgba(109,88,160,1) 50%, rgba(109,88,160,1) 52%, rgba(169,108,184,1) 100%); /* FF3.6-15 */-->
+    <!--background: -webkit-linear-gradient(-45deg, rgba(72,76,146,1) 0%,rgba(109,88,160,1) 50%,rgba(109,88,160,1) 52%,rgba(169,108,184,1) 100%); /* Chrome10-25,Safari5.1-6 */-->
+    <!--background: linear-gradient(135deg, rgba(72,76,146,1) 0%,rgba(109,88,160,1) 50%,rgba(109,88,160,1) 52%,rgba(169,108,184,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */-->
+    <!--filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#484c92', endColorstr='#a96cb8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */">-->
+
+    <!--    <div class="container-fluid" style="height:25%;">-->
+    <!--       <h1>How was the lesson?</h1>-->
+
+    <!--    </div>-->
+
+    <!--    <div class="container-fluid" style="height:100%;">-->
+    <!--    <div class="container-fluid" style="height:25%;">-->
+    <!--      <div id="1" class="row" style="height:100%">-->
+    <!--        <div id="good" class="col col-50" style="border-right: 1px rgba(255, 255, 255, 0.3) solid;">-->
+    <!--              <img src="img/educaper/good.png" class="img-responsive" style="height:30%; width:28%;"></img>-->
+    <!--              <p style="text-align:center;">Good</p>-->
+
+    <!--        </div>-->
+
+    <!--         <div id="verygood" class="col" >-->
+    <!--             <img src="img/educaper/very-good.png" class="img-responsive" style="height:30%; width:28%;"></img>-->
+    <!--             <p style="text-align:center;">Very good</p>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+
+    <!--     <div class="container-fluid" style="height:25%;">-->
+    <!--       <div id="2" class="row" style="height:100%">-->
+    <!--        <div id="bad" class="col col-50" style="border-right: 1px rgba(255, 255, 255, 0.3) solid;">-->
+    <!--              <img src="img/educaper/bad.png" class="img-responsive" style="height:30%; width:30%;"></img>-->
+    <!--              <p style="text-align:center;">Bad</p>-->
+
+    <!--        </div>-->
+
+    <!--         <div id="average" class="col"  >-->
+    <!--             <img src="img/educaper/average.png" class="img-responsive" style="height:30%; width:28%;"></img>-->
+    <!--             <p style="text-align:center;">Average</p>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--     </div>-->
+
+    <!--     <div class="container-fluid" style="height:25%;">-->
+    <!--       <div  id="3" class="row" style="height:100%">-->
+    <!--        <div id="verybad" class="col col-50" style="border-right: 1px rgba(255, 255, 255, 0.3) solid;">-->
+    <!--              <img src="img/educaper/very bad.png" class="img-responsive" style="height:30%; width:28%;"></img>-->
+    <!--              <p style="text-align:center;">Very bad</p>-->
+
+    <!--        </div>-->
+
+    <!--         <div id="saymore" onclick="location.href='comment.html';" class="col"  >-->
+    <!--             <img src="img/educaper/plus.png" class="img-responsive" style="height:30%; width:28%;"></img>-->
+    <!--             <p style="text-align:center;">Say more!</p>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--     </div>-->
+
+    <!--    </div>-->
+    <!--</ion-content>-->
+
+    <ion-content padding="true" class="rate">
+
+        <div class="row container-fluid">
+            <a id="good" class="col rate-block" ng-click="rate(1)">
+                <img src="img/educaper/good.png" class="img-responsive" style="height:30%; width:28%;"></img>
+                <p class="pa" style="text-align:center;">Good</p>
+            </a>
+
+            <a id="verygood" class="col rate-block" ng-click="rate(2)">
+                <img src="img/educaper/very-good.png" class="img-responsive" style="height:30%; width:28%;"></img>
+                <p class="pa" style="text-align:center;">Very good</p>
+            </a>
+        </div>
+
+
+        <div class="row container-fluid">
+
+            <a id="bad" class="col rate-block" ng-click="rate(3)">
+                <img src="img/educaper/bad.png" class="img-responsive" style="height:30%; width:28%;"></img>
+                <p class="pa" style="text-align:center;">Bad</p>
+
+            </a>
+
+            <a id="average" class="col rate-block" ng-click="rate(4)">
+                <img src="img/educaper/average.png" class="img-responsive" style="height:30%; width:28%;"></img>
+                <p class="pa" style="text-align:center;">Average</p>
+            </a>
+        </div>
+
+
+        <div class="row container-fluid">
+
+            <a id="verybad" class="col rate-block" ng-click="rate(1)">
+                <img src="img/educaper/very bad.png" class="img-responsive" style="height:30%; width:28%;"></img>
+                <p class="pa" style="text-align:center;">Very bad</p>
+
+            </a>
+
+            <a id="saymore" ng-click="rate(6)" class="col rate-block">
+                <img src="img/educaper/plus.png" class="img-responsive" style="height:30%; width:28%;"></img>
+                <p class="pa" style="text-align:center;">Say more!</p>
+            </a>
+        </div>
+
+
+        </div>
+    </ion-content>
+</ion-modal-view>
+
+
+
+
+
+<!--<ion-modal-view view-title="How was The Lesson">
+    <ion-header-bar class="bar bar-header">
+        <h1 class="title container-fluid">How was the Lesson ?</h1>
+        <button class="button button-icon ion-close-round" ng-click="closerate()"></button>
+    </ion-header-bar>
+    <ion-content class="rate">
+
+        <div class="row container-fluid">
+            <a id="good" class="col rate-block" ng-click="rate(1)">
+                <img src="img/educaper/educaper/good.png" class="img-responsive" style="height:25%;"></img>
+                <p class="pa" style="text-align:center;">Good</p>
+            </a>
+
+            <a id="verygood" class="col rate-block" ng-click="rate(2)">
+                <img src="img/educaper/educaper/very-good.png" class="img-responsive" style="height:25%; "></img>
+                <p class="pa" style="text-align:center;">Very good</p>
+            </a>
+        </div>
+
+
+        <div class="row container-fluid">
+
+            <a id="bad" class="col rate-block" ng-click="rate(3)">
+                <img src="img/educaper/educaper/bad.png" class="img-responsive" style="height:25%; "></img>
+                <p class="pa" style="text-align:center;">Bad</p>
+
+            </a>
+
+            <a id="average" class="col rate-block" ng-click="rate(4)">
+                <img src="img/educaper/educaper/average.png" class="img-responsive" style="height:25%; "></img>
+                <p class="pa" style="text-align:center;">Average</p>
+            </a>
+        </div>
+
+
+        <div class="row container-fluid">
+
+            <a id="verybad" class="col rate-block" ng-click="rate(1)">
+                <img src="img/educaper/educaper/very bad.png" class="img-responsive" style="height:25%; "></img>
+                <p class="pa" style="text-align:center;">Very bad</p>
+
+            </a>
+
+            <a id="saymore" ng-click="rate(6)" class="col rate-block">
+                <img src="img/educaper/educaper/plus.png" class="img-responsive" style="height:25%; "></img>
+                <p class="pa" style="text-align:center;">Say more!</p>
+            </a>
+        </div>
+
+
+        </div>
+    </ion-content>
+</ion-modal-view>-->

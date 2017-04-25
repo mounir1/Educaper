@@ -1,0 +1,62 @@
+<ion-view view-title="{{ 'mm.educaper.educaper' | translate }}">
+    <ion-nav-buttons side="secondary">
+        <div ng-if="endoflessones > 0">
+            <div>
+                <img src="https://lmimirror2.azureedge.net/static/img/614a8f96-2421-4b0b-b316-0210cf92ebe8/loader-on-charcoal.gif" class="button tooltip" ng-click="showrate()" title="How was the Cryptography Class ?&#10;How was the Artificial Intelegence Class ? &#10;How was the Data Base Class ?"
+                    animation="fade">
+                <!--<i   class="icon ion-ios-alarm"> -->
+                <!--    <i class="tooltip" title="" animation="fade"></i>-->
+                <!--</i>-->
+                <span class="badge badge-calm "> {{endoflessones}} </span>
+            </div>
+            <!--<div class="button" ng-click="showrate()">
+                <i class="tooltip" icon=" ion-ios-alarm" title="How was the Cryptography Class ?" animation="fade">  </i>
+                <span class="badge badge-calm "> {{endoflessones}} </span>
+            </div>-->
+        </div>
+        <mm-context-menu>
+
+        </mm-context-menu>
+    </ion-nav-buttons>
+    <mm-split-view component="EducaperDashboard">
+        <ion-content mm-state-class>
+
+            <ul class="list">
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_educaper-dashboard" title="{{ 'mm.educaper.dashboard' | translate }}">
+                        {{ 'mm.educaper.dashboard' | translate }}
+                    </a>
+                </li>
+
+                <li>
+                    <a class="item" title="{{ 'mm.educaper.departments' | translate }}" ng-click="showAlert()">
+                        {{ 'mm.educaper.departments' | translate }}
+                    </a>
+                </li>
+
+                <li>
+                    <a class="item" title="{{ 'mm.educaper.courses' | translate }}" mm-split-view-link="site.mm_educaper-courses">
+                        {{ 'mm.educaper.courses' | translate }}    
+                    </a>
+                </li>
+                <li>
+                    <a class="item" title="{{ 'mm.educaper.professors' | translate }}" ng-click="showAlert()">
+                        {{ 'mm.educaper.professors' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a class="item" title="{{ 'mm.educaper.students' | translate }}" mm-split-view-link="site.mm_educaper-analytics">
+                        {{ 'mm.educaper.analytics' | translate }}
+                    </a>
+                </li>
+
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_educaper-about" title="{{ 'mm.educaper.about' | translate }}">
+                        {{ 'mm.educaper.about' | translate }}
+                    </a>
+                </li>
+
+            </ul>
+        </ion-content>
+    </mm-split-view>
+</ion-view>

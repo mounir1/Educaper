@@ -1,0 +1,10 @@
+node_modules/
+bower_components/
+dist/
+tmp/
+examples/
+examples/
+examples/
+coverage/
+extra/
+test/

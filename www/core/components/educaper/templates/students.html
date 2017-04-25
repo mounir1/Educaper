@@ -1,0 +1,14 @@
+<ion-view view-title="">
+    <ion-content mm-state-class>
+
+        <mm-loading hide-until="participantsLoaded">
+            <p ng-if="participants && participants.length == 0" class="padding">{{ 'mma.participants.noparticipants' | translate }}</p>
+
+            <ul class="list" ng-if="participants && participants.length > 0">
+                <li ng-repeat="participant in participants">
+                    <mm-format-text>{{participant.fullname}}</mm-format-text>
+                </li>
+            </ul>
+
+    </ion-content>
+</ion-view>
